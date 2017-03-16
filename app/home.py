@@ -13,6 +13,10 @@ def about():
 def home():
     return render_template('home.html')
 
+@app.route('/story1/')
+def story1():
+    return render_template('story1.html')
+
 
 if __name__ == "__main__":
     app.run(debug = True)
